@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RiceLytics Login</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            background-color: #f8f8f8;
+            height: 100vh;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            padding-left: 80px;
+            background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAAE0lEQVR42mO8efPmfwYgYGJgAAA7BAEXwptcOAAAAABJRU5ErkJggg=='); /* placeholder */
+            background-repeat: no-repeat;
+            background-position: right center;
+            background-size: 60% auto;
+        }
+
+        .login-container {
+            background: #ffffff;
+            border-radius: 20px;
+            box-shadow: 0 20px 30px rgba(0, 0, 0, 0.1);
+            padding: 30px 40px;
+            width: 320px;
+            text-align: center;
+            position: relative;
+        }
+
+        .logo {
+            font-size: 26px;
+            margin-bottom: 20px;
+            font-weight: 700;
+        }
+
+        .logo span {
+            color: #5d2d91;
+        }
+        .logo .lytics {
+            color: #f57c00;
+        }
+
+        .form-group {
+            position: relative;
+            margin-bottom: 30px;
+        }
+
+        .form-group input {
+            width: 100%;
+            padding: 10px 10px 10px 0;
+            border: none;
+            border-bottom: 1px solid #ccc;
+            outline: none;
+            font-size: 14px;
+            background: transparent;
+        }
+
+        .form-group label {
+            position: absolute;
+            left: 0;
+            top: 10px;
+            font-size: 14px;
+            color: #888;
+            pointer-events: none;
+            transition: all 0.2s ease-in-out;
+        }
+
+        .form-group input:focus + label,
+        .form-group input:not(:placeholder-shown) + label {
+            top: -10px;
+            font-size: 12px;
+            color: #5a00e0;
+        }
+
+        .form-group i {
+            position: absolute;
+            right: 10px;
+            top: 50%;
+            transform: translateY(-50%);
+            color: #555;
+        }
+
+        .login-btn {
+            width: 100%;
+            padding: 12px;
+            background: linear-gradient(to right, #3f00ff, #7f00ff);
+            color: #fff;
+            font-weight: 600;
+            border: none;
+            border-radius: 30px;
+            cursor: pointer;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            transition: 0.3s;
+        }
+
+        .login-btn:hover {
+            background: linear-gradient(to right, #5a00e0, #a100ff);
+        }
+
+        .intra-link {
+            margin-top: 15px;
+            font-size: 12px;
+            color: #6a1b9a;
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        .header-logo {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            width: 60px;
+        }
+    </style>
+</head>
+<body>
+    <div class="login-container">
+        <img src="https://upload.wikimedia.org/wikipedia/en/thumb/0/0c/PhilRice_logo.svg/1200px-PhilRice_logo.svg.png" class="header-logo" alt="PhilRice Logo">
+        <div class="logo">
+            <span>Rice</span><span class="lytics">Lytics</span>
+        </div>
+        <div class="form-group">
+            <input type="text" id="username" placeholder=" " required>
+            <label for="username">Username</label>
+            <i class="fas fa-user"></i>
+        </div>
+        <div class="form-group">
+            <input type="password" id="password" placeholder=" " required>
+            <label for="password">Password</label>
+            <i class="fas fa-lock"></i>
+        </div>
+        <button class="login-btn">Login</button>
+        <a href="#" class="intra-link">Log-in to Intra?</a>
+    </div>
+
+    <!-- Font Awesome for icons -->
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</body>
+</html>
