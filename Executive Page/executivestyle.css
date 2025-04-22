@@ -82,6 +82,7 @@
 
     .btn:hover {
       transform: translateX(5px);
+      color:#f4862f;
     }
 
     .btn::after {
@@ -92,7 +93,8 @@
     }
 
     .btn:hover::after {
-      transform: translateX(5px);
+      transform: translateX(10px);
+      color:#f4862f;
     }
 
     .footer {
