@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>RiceLytics Executive Page</title>
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+  />
+  <style>
+    body {
+      background: #f2f2f2 url('img/PhilRice_BackGround.png') no-repeat center center fixed;
+      background-size: cover;
+      font-family: 'Poppins', sans-serif;
+    }
+    .sidebar {
+      width: 250px;
+      background-color: #e9e9e9;
+      border-radius: 10px;
+      padding: 10px;
+      overflow-y: auto;
+      height: calc(100vh - 150px);
+    }
+    
+    .toggle-btn {
+      background-color: orange;
+      border-radius: 50%;
+      width: 25px;
+      height: 25px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      cursor: pointer;
+      font-size: 12px;
+    }
+    .dropdown-menu a:hover {
+      background-color: #f58220;
+      color: white;
+      /*transition: 0.5s background-color: red;*/
+      border-radius: 10px 10px 10px 10px;
+      text-shadow: 1px 1px 2px black;
+      box-shadow: 1px 2px 2px 1px rgb(73, 73, 73)
+    }
+    .dropdown-scroll {
+      max-height: 200px;
+      overflow-y: auto;
+    }
+    .scenarios-list {
+      height: 150px;
+      overflow-y: auto;
+    }
+    .header-bar {
+      background-color: #00332d;
+      padding: 10px 20px;
+      color: #00332d;
+      
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .dropdown-toggle::after {
+      margin-left: 8px;
+    }
+    .main-label {
+      font-size: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .nav-center {
+      display: flex;
+      justify-content: center;
+      align-items: left;
+      gap: 15px;
+    }
+    .center-controls {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+  <div class="header-bar">
+    <img style="width: 13%;" src = "img/RiceLytics_Executive1.png"></img>
+    <div class="nav-center">
+      <div class="dropdown">
+        <button style="background: transparent; border: transparent; color: #e9e9e9;" class="btn btn-light dropdown-toggle" type="button" data-bs-toggle="dropdown">
+          Predictive Analytics
+        </button>
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item" href="#">Palay Yield</a></li>
+          <li><a class="dropdown-item" href="#">Supply & Utilization</a></li>
+          <li><a class="dropdown-item" href="#">Import Parity Price</a></li>
+        </ul>
+      </div>
+      <div class="dropdown">
+        <button style="background: transparent; border: transparent; color: #e9e9e9;" class="btn btn-light dropdown-toggle" type="button" data-bs-toggle="dropdown">
+          Descriptive Dashboards
+        </button>
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item" href="#">RiceLytics Basic</a></li>
+          <li><a class="dropdown-item" href="#">Multi-source Maps</a></li>
+          <li><a class="dropdown-item" href="#">PRISM</a></li>
+          <li><a class="dropdown-item" href="#">PRIME</a></li>
+          <li><a class="dropdown-item" href="#">FFRS</a></li>
+        </ul>
+      </div>
+    </div>
+    <button class="btn"><img style="width: 70%; height: 50%;" src = "img/Logout_Icon.png"></img></button>
+  </div>
+
+  <div class="container-fluid mt-3">
+    <div class="d-flex align-items-center justify-content-between mb-2">
+      <div style="font-size: x-large; padding-left: 6px;" class="main-label">
+        <div>Predictive Analytics - <strong>Palay Yield</strong></div>
+        <div></div>
+      </div>
+      <div class="d-flex justify-content-between align-items-center mb-3">
+        <div class="center-controls">
+          <div class="dropdown">
+            <button class="btn btn-light dropdown-toggle" type="button" data-bs-toggle="dropdown">
+              Location
+            </button>
+            <ul style="font-size: small; padding-right: 10%;" class="dropdown-menu dropdown-scroll">
+              <li><a class="dropdown-item" href="#">The Philippines</a></li>
+              <li><a class="dropdown-item" href="#">Cordillera Administrative Region</a></li>
+              <li><a class="dropdown-item" href="#">Cagayan Valley</a></li>
+              <li><a class="dropdown-item" href="#">CALABARZON</a></li>
+              <li><a class="dropdown-item" href="#">MIMAROPA</a></li>
+              <li><a class="dropdown-item" href="#">Western Visayas</a></li>
+              <li><a class="dropdown-item" href="#">Central Visayas</a></li>
+              <li><a class="dropdown-item" href="#">Eastern Visayas</a></li>
+              <li><a class="dropdown-item" href="#">Zamboanga Peninsula</a></li>
+              <li><a class="dropdown-item" href="#">Northern Mindanao</a></li>
+              <li><a class="dropdown-item" href="#">Davao Region</a></li>
+              <li><a class="dropdown-item" href="#">SOCCSKSARGEN</a></li>
+              <li><a class="dropdown-item" href="#">CARAGA</a></li>
+              <li><a class="dropdown-item" href="#">BARMM</a></li>
+                <ul>
+                    <label style="font-weight: 1000; font-size: x-small;">Cordillera Administrative Region</label>
+                        <a class="dropdown-item" href="#">Abra</a>
+                        <a class="dropdown-item" href="#">Apayao</a>
+                        <a class="dropdown-item" href="#">Benguet</a>
+                        <a class="dropdown-item" href="#">Ifugao</a>
+                        <a class="dropdown-item" href="#">Kalinga</a>
+                        <a class="dropdown-item" href="#">Mountain Province</a>
+                </ul>
+                <ul>
+                    <label style="font-weight: 1000; font-size: x-small;">Ilocos Region</label>
+                        <a class="dropdown-item" href="#">Ilocos Norte</a>
+                        <a class="dropdown-item" href="#">Ilocos Sur</a>
+                        <a class="dropdown-item" href="#">La Union</a>
+                        <a class="dropdown-item" href="#">Pangasinan</a>        
+                </ul>
+                <ul>
+                    <label style="font-weight: 1000; font-size: x-small;">Cagayan Valley</label>
+                        <a class="dropdown-item" href="#">Batanes</a>
+                        <a class="dropdown-item" href="#">Cagayan</a>
+                        <a class="dropdown-item" href="#">Isabela</a>
+                        <a class="dropdown-item" href="#">Nueva Vizcaya</a>        
+                        <a class="dropdown-item" href="#">Quirino</a>     
+                </ul>
+                <ul>
+                    <label style="font-weight: 1000; font-size: x-small;">Central Luzon</label>
+                        <a class="dropdown-item" href="#">Aurora</a>
+                        <a class="dropdown-item" href="#">Bataan</a>
+                        <a class="dropdown-item" href="#">Bulacan</a>
+                        <a class="dropdown-item" href="#">Nueva Ecija</a>
+                        <a class="dropdown-item" href="#">Pampanga</a>
+                        <a class="dropdown-item" href="#">Tarlac</a>
+                        <a class="dropdown-item" href="#">Zambales</a>
+                </ul>
+                <ul>
+                    <label style="font-weight: 1000; font-size: x-small;">Calabarzon</label>
+                        <a class="dropdown-item" href="#">Batangas</a>
+                        <a class="dropdown-item" href="#">Cavite</a>
+                        <a class="dropdown-item" href="#">Laguna</a>
+                        <a class="dropdown-item" href="#">Quezon</a>        
+                        <a class="dropdown-item" href="#">Rizal</a>     
+                </ul>
+                <ul>
+                    <label style="font-weight: 1000; font-size: x-small;">MIMAROPA</label>
+                        <a class="dropdown-item" href="#">Marinduque</a>
+                        <a class="dropdown-item" href="#">Occidental Mindoro</a>
+                        <a class="dropdown-item" href="#">Oriental Mindoro</a>
+                        <a class="dropdown-item" href="#">Palawan</a>        
+                        <a class="dropdown-item" href="#">Romblon</a>     
+                </ul>
+                <ul>
+                    <label style="font-weight: 1000; font-size: x-small;">Bicol Region</label>
+                        <a class="dropdown-item" href="#">Albay</a>
+                        <a class="dropdown-item" href="#">Camarines Norte</a>
+                        <a class="dropdown-item" href="#">Camarines Sur</a>
+                        <a class="dropdown-item" href="#">Catanduanes</a>
+                        <a class="dropdown-item" href="#">Masbate</a>
+                        <a class="dropdown-item" href="#">Sorsogon</a>
+                </ul>
+                <ul>
+                    <label style="font-weight: 1000; font-size: x-small;">Western Visayas</label>
+                        <a class="dropdown-item" href="#">Aklan</a>
+                        <a class="dropdown-item" href="#">Antique</a>
+                        <a class="dropdown-item" href="#">Capiz</a>
+                        <a class="dropdown-item" href="#">Guimaras</a>
+                        <a class="dropdown-item" href="#">Iloilo</a>
+                        <a class="dropdown-item" href="#">Negros Occidental</a>
+                </ul>
+                <ul>
+                    <label style="font-weight: 1000; font-size: x-small;">Central Visayas</label>
+                        <a class="dropdown-item" href="#">Bohol</a>
+                        <a class="dropdown-item" href="#">Cebu</a>
+                        <a class="dropdown-item" href="#">Negros Orriental</a>
+                        <a class="dropdown-item" href="#">Siquijor</a>
+                </ul>
+                <ul>
+                    <label style="font-weight: 1000; font-size: x-small;">Eastern Visayas</label>
+                        <a class="dropdown-item" href="#">Biliran</a>
+                        <a class="dropdown-item" href="#">Eastern Samar</a>
+                        <a class="dropdown-item" href="#">Leyte</a>
+                        <a class="dropdown-item" href="#">Northern Samar</a>
+                        <a class="dropdown-item" href="#">Southern Samar</a>
+                        <a class="dropdown-item" href="#">Western Samar</a>
+                </ul>
+                <ul>
+                    <label style="font-weight: 1000; font-size: x-small;">Zambuanga Peninsula</label>
+                        <a class="dropdown-item" href="#">Zambuanga del Norte</a>
+                        <a class="dropdown-item" href="#">Zambuanga del Sur</a>
+                        <a class="dropdown-item" href="#">Zambuanga Sibugay</a>
+                </ul>
+                <ul>
+                    <label style="font-weight: 1000; font-size: x-small;">Northern Mindanao</label>
+                        <a class="dropdown-item" href="#">Bukidnon</a>
+                        <a class="dropdown-item" href="#">Camiguin</a>
+                        <a class="dropdown-item" href="#">Lanao del Norte</a>
+                        <a class="dropdown-item" href="#">Misamis Occidental</a>
+                        <a class="dropdown-item" href="#">Misamis Oriental</a>
+                </ul>
+                <ul>
+                    <label style="font-weight: 1000; font-size: x-small;">Davao Region</label>
+                        <a class="dropdown-item" href="#">Davao del Norte</a>
+                        <a class="dropdown-item" href="#">Davao del Sur</a>
+                        <a class="dropdown-item" href="#">Davao de Oro</a>
+                        <a class="dropdown-item" href="#">Davao Occidental</a>
+                        <a class="dropdown-item" href="#">Davao Oriental</a>
+                </ul>
+                <ul>
+                    <label style="font-weight: 1000; font-size: x-small;">SOCCSKSARGEN</label>
+                        <a class="dropdown-item" href="#">North Cotabato</a>
+                        <a class="dropdown-item" href="#">Sarangani</a>
+                        <a class="dropdown-item" href="#">South Cotabato</a>
+                        <a class="dropdown-item" href="#">Sultan Kudarat</a>
+                </ul>
+                <ul>
+                    <label style="font-weight: 1000; font-size: x-small;">BARMM</label>
+                        <a class="dropdown-item" href="#">Basilan</a>
+                        <a class="dropdown-item" href="#">Lanao del Sur</a>
+                        <a class="dropdown-item" href="#">Magindanao</a>
+                        <a class="dropdown-item" href="#">Sulu</a>
+                        <a class="dropdown-item" href="#">Tawi-Tawi</a>
+                </ul>
+            </ul>
+          </div>
+          <button style="background-color: #f58220; border-color: #f58220; color: #e9e9e9;" class="btn btn-warning">Refresh</button>
+          <button style="background-color:transparent; border-color: transparent; color: #e9e9e9; color: transparent" class="btn btn-warning">New</button>
+          <button style="background-color:transparent; border-color: transparent; color: #e9e9e9; color: transparent" class="btn btn-warning">Save</button>
+          <button style="background-color:transparent; border-color: transparent; color: #e9e9e9; color: transparent" class="btn btn-warning">Save as New</button>
+          <button style="background-color:transparent; border-color: transparent; color: #e9e9e9; color: transparent" class="btn btn-warning">Delete</button>
+        </div>
+       
+      </div>
+    </div>
+
+    <div class="d-flex mt-4">
+      <div id="sidebar" class="sidebar me-3">
+        <h6 style="background-color: #00332d; border-radius: 7px 7px 0px 0px; color: #e9e9e9; padding-left: 3%; padding-top: 3%;" class="fw-bold border-bottom pb-1">Scenarios</h6>
+        <div style="margin-top: -4%; border-radius: 0px 0px 7px 7px ;" class="scenarios-list mb-3">
+          <ul style="font-size:x-small" class="list-group list-group-flush">
+            <li class="list-group-item">1</li>
+            <li class="list-group-item">2</li>
+            <li class="list-group-item">3</li>
+            <li class="list-group-item">4</li>
+            <li class="list-group-item">5</li>
+            <li class="list-group-item">6</li>
+            <li class="list-group-item">7</li>
+            <li class="list-group-item">8</li>
+            <li class="list-group-item">9</li>
+            <li class="list-group-item">10</li>
+          </ul>
+        </div>
+        <h6 style="background-color: #00332d; border-radius: 7px 7px 0px 0px; color: #e9e9e9; padding-left: 3%; padding-top: 3%;" class="fw-bold border-bottom pb-1">Calibration</h6>
+        <div class="form-control" style="height: 300px; border-radius: 0px 0px 7px 7px; margin-top: -4%;"></div>
+      </div>
+
+      <div class="flex-grow-1">
+        <!-- Main content area -->
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    function toggleSidebar() {
+      const sidebar = document.getElementById("sidebar");
+      sidebar.style.display = sidebar.style.display === "none" ? "block" : "none";
+    }
+  </script>
+</body>
+</html>
